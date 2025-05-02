@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main(void) {
+    // 紙 まいすう まで の かみ の たんか（5まい まで）
+    int paperquantity = 5;
+
+    // 5まい まで の たんか（1まい あたり80えん）
+    int paperfive = 80;
+
+    // 5まい を こえた ばあい の たんか（1まい あたり60えん）
+    int papermorefive = 60;
+
+    // ごうけい きんがく（しょうすうてん を ふくむ かのうせい が ある ため doubleがた を しよう）
+    double total;
+
+    // ゆーざー から こうにゅう したい かみ の まいすう を にゅうりょく して もらう
+    int inputpaper;
+    printf("かみ の まいすう を にゅうりょく して ください: ");
+    scanf("%d", &inputpaper);
+
+    // にゅうりょく された まいすう が 5いか の ばあい の しょり
+    if (inputpaper <= paperquantity) {
+        // ごうけい きんがく = まいすう × たんか
+        total = inputpaper * paperfive;
+
+        // ごうけい きんがく と たんか を ひょうじ
+        printf("ごうけいきんがく: %.2lf 円\n", total);
+        printf("たんか: %d 円\n", paperfive);
+
+    } else {
+        // 6まい いじょう の ばあい、やすい たんか が てきよう される
+        total = inputpaper * papermorefive;
+
+        // ごうけい きんがく と たんか を ひょうじ
+        printf("ごうけいきんがく: %.2lf 円\n", total);
+        printf("たんか: %d 円\n", papermorefive);
+    }
+
+    return 0;
+}
+
+

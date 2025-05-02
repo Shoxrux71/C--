@@ -1,0 +1,22 @@
+#include<stdio.h>
+  int main(void){
+    int vanncount,strawcount,chococount;
+    int vanilla = 180;
+    int strawberry = 200;
+    int chocolate = 230;
+    float tax = 1.10; 
+
+    printf("バニラアイスクリームの個数を入力してください: "); 
+    scanf("%d", &vanncount); 
+ 
+   printf("ストロベリーアイスクリームの個数を入力してください: "); 
+   scanf("%d", &strawcount); 
+ 
+   printf("チョコレートアイスクリームの個数を入力してください: "); 
+   scanf("%d", &chococount); 
+  
+   float total = (vanncount * vanilla + strawcount * strawberry + chococount * chocolate ) * tax; 
+
+   printf("totallay price (10%% soliq bilan) : %.0f yen\n",total); 
+   return 0; 
+  }  
