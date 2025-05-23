@@ -6,10 +6,11 @@ int main(void) {
     scanf("%d", &age);
 
     if (age > 6 && age <= 64) {
-      printf("100円です\n"); // 100 円
+        printf("100円です\n"); // １００円
     } else {
-        printf("無料です\n"); // 無料です
+        printf("無料です\n"); // 無料
     }
 
     return 0;
 }
+
