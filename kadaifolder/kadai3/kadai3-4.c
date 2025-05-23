@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(){
+  int number;
+  printf("3たけの　整数を　入力して下さい: ");
+  scanf("%d",&number);
+  int last_digit = number % 10;
+  int last_two_digits = number % 100;
+
+  if(last_two_digits == 23) {
+    printf("1等\n");
+  }
+    else if (last_digit ==  7) {
+      printf("2等\n");
+    }
+    else {
+      printf("はずれ\n");
+    }
+  return 0;
+}
+	 
