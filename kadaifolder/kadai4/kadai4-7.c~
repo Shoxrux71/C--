@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdio.h>
+
+int main() {
+    int a, b, c; // 国語、英語、数学の点数
+    int max_score, evaluation_score;
+    char result[10]; // 合格 or 不合格
+    
+    // 点数入力
+    printf("国語の点数：");
+    scanf("%d", &a);
+    printf("英語の点数：");
+    scanf("%d", &b);
+    printf("数学の点数：");
+    scanf("%d", &c);
+    
+    // 最高点を求める
+    max_score = a;
+    if (b > max_score) max_score = b;
+    if (c > max_score) max_score = c;
+    
+    // 評価点を計算（最高点×2 + 他の2教科）
+    evaluation_score = (max_score * 2) + (a + b + c - max_score);
+    
+    // 合格判定
+    if (evaluation_score >= 240 && a >= 40 && b >= 40 && c >= 40) {
+        strcpy(result, "合格");
+    } else {
+        strcpy(result, "不合格");
+    }
+    
+    // 結果出力
+    printf("評価点は%d点で%s\n", evaluation_score, result);
+    
+    return 0;
+}

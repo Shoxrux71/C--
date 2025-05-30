@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int hour, minute;
+    
+    printf("24 soatlik formatda soatni kiriting (HH:MM): ");
+    scanf("%d:%d", &hour, &minute);
+    
+    if (hour < 0 || hour > 23 || minute < 0 || minute > 59) {
+        printf("Noto'g'ri vaqt kiritildi!\n");
+        return 1;
+    }
+    
+    printf("12 soatlik formatda: ");
+    printf("%02d:%02d %s\n", 
+           hour == 0 ? 12 : hour > 12 ? hour - 12 : hour, 
+           minute, 
+           hour < 12 ? "AM" : "PM");
+    
+    return 0;
+}

@@ -1,0 +1,1 @@
+amirjonovdamin@Amirjonovs-MacBook-Air.local.1936:1748572076
