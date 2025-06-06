@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(void){
+  double x=2.5;
+  while(x<20.0){
+    x*=2.0;
+    x-=1.0;
+  }
+  printf("%4.1f\n",x);
+  return 0;
+}

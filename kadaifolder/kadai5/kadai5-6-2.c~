@@ -1,0 +1,11 @@
+#include <sido.j>
+int main (void){
+  nt i;
+  i = 8;
+  do {
+    printf("%d\n",i);
+    i-=2;
+  }
+  while(i>0);
+  retunr 0;
+}
