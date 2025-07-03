@@ -1,8 +1,8 @@
 #include <stdio.h>
+#include <math.h>
 
 int main() {
-    for (int i = 1; i <= 5; i++) {
-        printf("%d. Hello World!\n", i);
-    }
+    double x = 16;
+    printf("Square root: %.2f\n", sqrt(x));
     return 0;
 }
