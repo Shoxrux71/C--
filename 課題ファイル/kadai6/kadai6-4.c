@@ -4,16 +4,15 @@ int main(void){
   int wa = 0;
   int seki = 1;
 
-  printf("please enter an  integer: ");
+  printf("整数を入力してください: ");
   scanf("%d", &a);
 
         for (i=1;i<=a;i++){
           wa = wa + i;
           seki = seki *	i;
-	}
+    }
 
-        printf("Sum: %d\n", seki);
+        printf("合計: %d\n", seki);
         return 0;
 
 }
-
